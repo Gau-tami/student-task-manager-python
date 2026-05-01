@@ -2,23 +2,22 @@
 
 ## Overview
 
-A command-line based task management application built using Python.
-This project demonstrates clean code structure, modular design, file handling, and input validation.
+A command-line task management application built using Python to efficiently create, organize, and track tasks. The system supports prioritization, due date management, and structured task handling using persistent storage.
 
 ---
 
 ## Features
 
 * Add tasks with title, priority, and due date
-* View tasks with sorting:
+* View tasks sorted by:
 
   * Incomplete tasks first
-  * Priority-based ordering (High → Low)
-  * Due date sorting
+  * Priority (High → Low)
+  * Due date
 * Mark tasks as completed
 * Delete tasks
 * Persistent storage using JSON
-* Input validation and error handling
+* Input validation and error handling for robust execution
 
 ---
 
@@ -27,10 +26,10 @@ This project demonstrates clean code structure, modular design, file handling, a
 ```
 student_task_manager/
 │
-├── main.py        # CLI + application logic
-├── task.py        # Task model (data structure)
-├── storage.py     # JSON read/write operations
-├── tasks.json     # Data storage
+├── main.py        # CLI interface and control flow
+├── task.py        # Task model and structure
+├── storage.py     # JSON data handling
+├── tasks.json     # Persistent storage
 └── README.md
 ```
 
@@ -38,45 +37,38 @@ student_task_manager/
 
 ## How It Works
 
-### 1. Task Model
+### Task Model
 
-Each task contains:
+Each task includes:
 
 * ID
 * Title
 * Completion status
 * Priority (Low / Medium / High)
-* Due Date (optional)
+* Due date
 
 ---
 
-### 2. Storage
+### Storage
 
 * Tasks are stored in a JSON file
-* Data is converted between Python objects and dictionaries
+* Data is serialized/deserialized between Python objects and JSON
 
 ---
 
-### 3. CLI Interaction
+### CLI Interface
 
-* Menu-driven interface
-* Continuous loop for user interaction
-* Input validation for robustness
+* Menu-driven interaction
+* Continuous loop for user operations
+* Input validation ensures stability
 
 ---
 
-## Installation & Setup
-
-### 1. Clone Repository
+## How to Run
 
 ```
 git clone <your-repo-link>
 cd student_task_manager
-```
-
-### 2. Run Application
-
-```
 python main.py
 ```
 
@@ -107,23 +99,22 @@ python main.py
 ## Key Concepts Demonstrated
 
 * Object-Oriented Programming (OOP)
-* File Handling (JSON)
+* File Handling using JSON
 * Modular Code Design
-* Input Validation
-* Error Handling
-* Sorting with Custom Logic
+* Input Validation and Error Handling
+* Custom Sorting Logic
 
 ---
 
 ## Future Improvements
 
-* Task editing feature
-* Search/filter tasks
-* GUI version (Tkinter / Web)
+* Task editing functionality
+* Search and filtering options
+* GUI version (Tkinter or Web-based)
 * Database integration (SQLite)
 
 ---
 
 ## Author
 
-[Your Name]
+Gautami Poojari
