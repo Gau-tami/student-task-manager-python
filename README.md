@@ -67,12 +67,13 @@ Each task includes:
 ## How to Run
 
 ```
-git clone <your-repo-link>
+git clone https://github.com/Gau-tami/student-task-manager-python
 cd student_task_manager
 python main.py
 ```
 
 ---
+# Clone and run the project
 
 ## Sample Output
 
